@@ -1,1 +1,2 @@
-# trivia-game
+# Trivia Game
+Details to come!
