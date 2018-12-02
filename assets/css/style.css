@@ -1,0 +1,311 @@
+/* 
+========================
+General Styles
+========================
+*/
+
+body {
+    min-height: 100%;
+    background: #003DA6;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 56px;
+}
+
+h2 {
+    font-size: 38px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+/* 
+========================
+Game Wrapper Styles
+========================
+*/
+
+#game-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 3em auto;
+    padding: 1em;
+    background: #FFFEFE;
+    position: relative;
+    border: 5px solid #003DA6;
+    text-align: center; 
+}
+
+#game-wrapper:after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    background: #CD333A; 
+    z-index: -1;
+    border-radius: 5px; 
+}
+
+
+/* 
+========================
+Liberty Bell and Timer Styles
+========================
+*/
+
+#timer {
+    width: 5em;
+    padding: 0.5em;
+    margin: 2em auto;
+    border-radius: 90px;
+    color: #FFFEFE; 
+    background-color: #CD333A;
+
+}
+
+#liberty-bell {
+    width: 75px;
+    height: 75px;
+    margin: 2em auto;
+}
+
+#liberty-bell img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Wobble Horizontal */
+/* Code courtesy of Ian Lunn (http://ianlunn.github.io/Hover/) */
+@-webkit-keyframes hvr-wobble-horizontal {
+    16.65% {
+      -webkit-transform: translateX(8px);
+      transform: translateX(8px);
+    }
+    33.3% {
+      -webkit-transform: translateX(-6px);
+      transform: translateX(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateX(4px);
+      transform: translateX(4px);
+    }
+    66.6% {
+      -webkit-transform: translateX(-2px);
+      transform: translateX(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateX(1px);
+      transform: translateX(1px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes hvr-wobble-horizontal {
+    16.65% {
+      -webkit-transform: translateX(8px);
+      transform: translateX(8px);
+    }
+    33.3% {
+      -webkit-transform: translateX(-6px);
+      transform: translateX(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateX(4px);
+      transform: translateX(4px);
+    }
+    66.6% {
+      -webkit-transform: translateX(-2px);
+      transform: translateX(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateX(1px);
+      transform: translateX(1px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  .hvr-wobble-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-wobble-horizontal:hover, .hvr-wobble-horizontal:focus, .hvr-wobble-horizontal:active {
+    -webkit-animation-name: hvr-wobble-horizontal;
+    animation-name: hvr-wobble-horizontal;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+
+/* Buzz */
+/* Code courtesy of Ian Lunn (http://ianlunn.github.io/Hover/) */
+@-webkit-keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+@keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+.hvr-buzz {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* 
+========================
+Question, Options, and Answer Styles
+========================
+*/
+
+#question-and-options {
+  display: flex;
+  flex-direction: column;
+}
+
+#question {
+    margin: 1em auto;
+}
+
+#options-ul {
+    margin: 0.5em auto;
+    box-sizing: content-box; 
+}
+
+.options-li {
+    width: 50%;
+    margin: 0.5em auto;
+    padding: 0.5em;
+    text-align: center;
+    box-sizing: content-box; 
+}
+
+.options-li:hover {
+    background: #CD333A;
+    color: #FFFEFE;
+}
+
+#answer {
+  margin: 1em auto;
+  width: 75%;
+}
+
+#answer p {
+  font-size: 20px;
+}
+
+#answer-outcome-correct {
+  margin: 1em;
+  font-size: 48px;
+  color: goldenrod;
+}
+
+#answer-outcome-incorrect {
+  margin: 1em;
+  font-size: 48px;
+  color: #CD333A;
+}
+
+#answer-image {
+  margin-top: 1em;
+  width: 40%;
+  box-shadow: 2px 2px 2px grey;
+}
+
+#answer-image-caption {
+  margin-bottom: 1em;
+  font-size: small;
+  font-style: italic;
+  color: gray;
+}
+
+#next-question-button {
+  margin-top: 1em;
+  font-size: 20px;
+  background: none;
+  border: #003DA6 solid 3px;
+  padding: 0.5em;
+}
+
+#next-question-button:hover {
+  background: #003DA6;
+  color: #FFFEFE; 
+}
+
+/* List options hover style */
+/* Code courtesy of Ian Lunn (http://ianlunn.github.io/Hover/) */
+.hvr-fade {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+  }
+
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+    background-color: #CD333A;
+    color: #FFFEFE;
+  }
+
+/* 
+========================
+Media Query Styles
+========================
+*/
+
+@media screen and (max-width: 705px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+}
