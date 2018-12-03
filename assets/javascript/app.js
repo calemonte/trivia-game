@@ -1,4 +1,3 @@
-// Global variables for storing counters and intervalId.
 var wins = 0;
 var losses = 0;
 var unanswered = 0;
@@ -7,12 +6,12 @@ var intervalId;
 var timerRunning = false;
 var buzzerHit = false;
 
-// On click references
+// Load start button on load.
 window.onload = function() {
     $("#start-button").on("click", trivia.start);
 }
 
-// Object containing array of questions, answers, image srcs, figure captions, and alt texts.
+// Trivia object contains the entire trivia game.
 var trivia = {
 
     time: 30,
@@ -141,7 +140,7 @@ var trivia = {
         },
         {
             id: 9,
-            question: "This excitable Philadephian has appeared on The Simpsons, 30 Rock, and It's Always Sunny in Philadelphia",
+            question: "This excitable Philadephian has appeared on The Simpsons, 30 Rock, and It's Always Sunny in Philadelphia.",
             options: [
                 "Rocky Balboa",
                 "Swoop",
@@ -171,7 +170,7 @@ var trivia = {
         },
     ],
 
-    // Start game function
+    // Start game function.
     start: function() {
 
         // Remove start text from DOM.
@@ -180,7 +179,7 @@ var trivia = {
         trivia.displayQuestion();
     },
 
-    // Display question function
+    // Display question function.
     displayQuestion: function() {
 
         // Cache reference to current trivia question.
@@ -189,7 +188,7 @@ var trivia = {
         // Start the timer.
         trivia.startTimer();
 
-        // Set timeout for 30 seconds.
+        // Set timeout for 30 seconds and handle logic if unanswered.
         var buzzer = setTimeout(function() {
             unanswered++;
             result = false;
@@ -235,7 +234,7 @@ var trivia = {
     
     },
 
-    // Star timer function.
+    // Start timer function.
     startTimer: function() {
         if (!timerRunning) {
             intervalId = setInterval(trivia.count, 1000);
@@ -306,17 +305,17 @@ var trivia = {
             $("#answer").append("<button id='next-question-button' class='hvr-fade'>View Results</button>");
 
             // Fire final score function when called.
-            $("#next-question-button").click(trivia.viewResults);
+            $("#next-question-button").on("click", trivia.viewResults);
         } else {
             // Append next question button.
             $("#answer").append("<button id='next-question-button' class='hvr-fade'>Next Question</button>");
 
             // Fire next question function when called.
-            $("#next-question-button").click(trivia.nextQuestion);
+            $("#next-question-button").on("click", trivia.nextQuestion);
         }
     },
 
-    // Next question function
+    // Show the next question and reset the board.
     nextQuestion: function() {
 
         // Reset timer (as opposed to merely stopping it).
