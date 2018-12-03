@@ -227,6 +227,7 @@ Question, Options, and Answer Styles
 .options-li:hover {
     background: #CD333A;
     color: #FFFEFE;
+    cursor: pointer;
 }
 
 #answer {
@@ -263,7 +264,9 @@ Question, Options, and Answer Styles
   color: gray;
 }
 
-#next-question-button {
+#next-question-button, 
+#start-button,
+#restart-button {
   margin-top: 1em;
   font-size: 20px;
   background: none;
@@ -271,7 +274,9 @@ Question, Options, and Answer Styles
   padding: 0.5em;
 }
 
-#next-question-button:hover {
+#next-question-button:hover, 
+#start-button:hover,
+#restart-button:hover {
   background: #003DA6;
   color: #FFFEFE; 
 }
@@ -295,6 +300,17 @@ Question, Options, and Answer Styles
     background-color: #CD333A;
     color: #FFFEFE;
   }
+
+/* 
+========================
+Results Styles
+========================
+*/
+
+#results h2 {
+  margin-bottom: 1em;
+  text-decoration: underline #CD333A;
+}
 
 /* 
 ========================
