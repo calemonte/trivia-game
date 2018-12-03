@@ -40,30 +40,135 @@ var trivia = {
             options: [
                 "The Second Continental Congress", 
                 "The First Continental Congress",
-                "The Third Contintental Congress",
+                "The Third Continental Congress",
                 "The Revolutionary Continental Congress"
             ],
             answer: "The Second Continental Congress",
-            answerText: "The Second Continental Congress was a convention of delegates from the Thirteen Colonies that started meeting in the spring of 1775 in Philadelphia. It succeeded the First Contintental Congress and was responsible for signing the Declaration of Independence.",
+            answerText: "The Second Continental Congress was a convention of delegates from the Thirteen Colonies that started meeting in the spring of 1775 in Philadelphia. It succeeded the First Continental Congress and was responsible for signing the Declaration of Independence.",
             img: "assets/images/independence-hall.jpg",
             altText: "Color photograph of the Assembly Room in Independence Hall in Philadelphia.",
             imgCaption: "The Assembly Room in Independence Hall where the Second Continental Congress adopted the Declaration of Independence in 1776."
         },
         {
             id: 3,
-            question: "What Fairmount field was destroyed by (and rebuilt after) Philly’s inaugural Made in America concert in 2012?",
+            question: "If you get off the Garden State Parkway at Exit 0, you’re going to...",
             options: [
-                "Paine's Park",
-                "The Azalea Garden",
-                "Van Colln Memorial Field",
-                "Eakins Oval"
+                "Wildwood",
+                "Avalon",
+                "Sea Isle City",
+                "Cape May"
             ],
-            answer: "Van Colln Memorial Field",
-            answerText: "Von Colln Memorial Field, located at 22nd and the Parkway, was used extensively during the two-day concert in 2012 and was destroyed as a result. Made in America organizers were held responsible for repairing the damage caused.",
-            img: "assets/images/van-colln.jpg",
-            altText: "Muddied, grass-less field covered in equipment.",
-            imgCaption: "Van Colln Memorial Field as it appeared after the 2012 Made in America Concert."
-        }
+            answer: "Cape May",
+            answerText: "Cape May, located off Exit 0 of the New Jersey Garden State Parkway, has been a seaside getaway for Philadelphians for generations. It's the southernmost town in New Jersey.",
+            img: "assets/images/cape-may.jpg",
+            altText: "The Cape May shoreline as seen from a boat just off the coast.",
+            imgCaption: "One of the country's oldest resort destinations, Cape May is known for its Victorian buildings."
+        },
+        {
+            id: 4,
+            question: "SEPTA has eight lettered bus routes. This isn't one of them.",
+            options: [
+                "M",
+                "XH",
+                "G",
+                "R"
+            ],
+            answer: "M",
+            answerText: "SEPTA’s R, XH and G routes take passengers between Northeast, Northwest, West, North and South Philly. But there is no M route.",
+            img: "assets/images/xh-bus.jpg", 
+            altText: "Photograph of a SEPTA Route XH bus driving down a Philadelphia street.",
+            imgCaption: "SEPTA Route XH is the only lettered route with two letters."
+        },
+        {
+            id: 5,
+            question: "Which of the following is not needed to make a soft pretzel?",
+            options: [
+                "Yeast",
+                "Sugar",
+                "Lye",
+                "Buckwheat"
+            ],
+            answer: "Buckwheat",
+            answerText: "A quick dip in lye gives soft pretzels their traditional 'skin' and helps salt stick. Yeast and sugar are necessary to the process, but buckwheat isn’t.",
+            img: "assets/images/pretzels.jpg",
+            altText: "Traditional Philadelphia soft pretzels on a pizza peal.",
+            imgCaption: "Philly soft pretzels date back to the 1800s, when the region’s German immigrants began recreating the bretzels of their homeland."
+        },
+        {
+            id: 6,
+            question: "What is the area along Sansom Street between Seventh and Eighth Streets and on Eighth Street between Chestnut and Walnut referred to as?",
+            options: [
+                "Queen Village",
+                "Franklin's Way",
+                "Jeweler's Row",
+                "Eastern Liberties"
+            ],
+            answer: "Jeweler's Row",
+            answerText: "Jeweler’s Row is the nation’s oldest diamond district. It’s tucked between Old City and Washington Square.",
+            img: "assets/images/jewelers-row.jpg",
+            altText: "Jeweler's Row in downtown Philadelphia on a sunny day.",
+            imgCaption: "Jeweler's Row as it appeared in 2016."
+        },
+        {
+            id: 7,
+            question: "Who threw the final pitch of the 2008 World Series?",
+            options: [
+                "Brad Lidge",
+                "Cole Hamels",
+                "Chad Durbin",
+                "Ryan Madson"
+            ],
+            answer: "Brad Lidge",
+            answerText: "After throwing the final pitch in the 2008 World Series Brad “Lights Out” Lidge dropped to his knees, kicking off a celebration of epic proportions in Philadelphia.",
+            img: "assets/images/lidge.jpeg",
+            altText: "Brad Lidge celebrates throwing the winning pitch for the Philadelphia Phillies in the 2008 World Series.",
+            imgCaption: "Brad Lidge celebrating the Phillies becoming World Champs."
+        },
+        {
+            id: 8,
+            question: "What day of the year does the annual Mummers Parade take place?",
+            options: [
+                "Christmas",
+                "New Year's Day",
+                "Thanksgiving",
+                "Easter"
+            ],
+            answer: "New Year's Day",
+            answerText: "What’s New Year’s Day without the Mummers? Bundle up and get to Broad Street early to watch the parade.",
+            img: "assets/images/mummers.jpg",
+            altText: "Festively dressed Mummers march down South Broad Street in Philadephia.",
+            imgCaption: "The Mummers Parade is believed to be the oldest folk festival in the United States."
+        },
+        {
+            id: 9,
+            question: "This excitable Philadephian has appeared on The Simpsons, 30 Rock, and It's Always Sunny in Philadelphia",
+            options: [
+                "Rocky Balboa",
+                "Swoop",
+                "Gritty",
+                "The Philly Phanatic"
+            ],
+            answer: "The Philly Phanatic",
+            answerText: "The green, loveable Philly Phanatic‘s many TV appearances include The Simpsons, 30 Rock and Always Sunny.",
+            img: "assets/images/phanatic.jpg",
+            altText: "The Philly Phanatic doing his thing.",
+            imgCaption: "The best mascot in all of sports."
+        },
+        {
+            id: 10,
+            question: "How large is Philadelphia in square miles (est.)?",
+            options: [
+                "134.1",
+                "915.8",
+                "42.7",
+                "256.1"
+            ],
+            answer: "134.1",
+            answerText: "The city represents 134.1 square miles of Pennsylvania’s 44,742.7 square miles.",
+            img: "assets/images/philly.jpg",
+            altText: "Aerial view of Philadephia.",
+            imgCaption: "Philly's skyline continues to grow!",
+        },
     ],
 
     // Start game function
