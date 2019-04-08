@@ -272,6 +272,7 @@ Question, Options, and Answer Styles
   background: none;
   border: #003DA6 solid 3px;
   padding: 0.5em;
+  cursor: pointer;
 }
 
 #next-question-button:hover, 
